@@ -1,0 +1,25 @@
+{
+  "name": "test-routing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uilmi/test-routing.git"
+  },
+  "keywords": [
+    "routing"
+  ],
+  "author": "Ulul Ilmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uilmi/test-routing/issues"
+  },
+  "homepage": "https://github.com/uilmi/test-routing#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

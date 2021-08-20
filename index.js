@@ -10,13 +10,17 @@ function helloWorld(req, res) {
 function getProducts(req, res) {
     const data = ['Apple', 'Redmi', 'One plus'];
 
-    res.send(data);
+    res.json(data);
 }
 
 function getOrders(req, res) {
-    const data = { id: 1, paid: false, user_id: 1 };
+    const data = {
+        id: 1,
+        paid: false,
+        user_id: 1
+    }
 
-    res.send(data);
+    res.json(data);
 }
 
 app.get('/', helloWorld);
@@ -24,3 +28,11 @@ app.get('/', helloWorld);
 app.get('/products', getProducts);
 
 app.get('/orders', getOrders);
+
+app.get('/users', function (req, res) {
+    const dataUser = [{ nama: 'abc', umur: 10 }, { nama: 'cde', umur: 15 }];
+
+    res.send(dataUser);
+})
+
+app.listen(port);
